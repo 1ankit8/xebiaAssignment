@@ -1,0 +1,9 @@
+.container{
+    width: 50%;
+}
+
+#loadingUsers{
+    width: 10%;
+    height: 10%;
+    border-radius: 30px;
+}

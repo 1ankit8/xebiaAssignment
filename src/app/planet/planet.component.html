@@ -1,0 +1,59 @@
+<div class="planetContainer" *ngIf="planet; else noPlanetSelected">
+  <table class="planetTable">
+    <tr>
+      <th>Name:</th>
+      <td>{{planet.name}}</td>
+    </tr>
+    <tr>
+      <th>Rotation Period</th>
+      <td>{{planet.rotation_period}}</td>
+    </tr>
+    <tr>
+      <th>Orbital Period</th>
+      <td>{{planet.orbital_period}}</td>
+    </tr>
+    <tr>
+      <th>Diameter</th>
+      <td>{{planet.diameter}}</td>
+    </tr>
+    <tr>
+      <th>Climate</th>
+      <td>{{planet.climate}}</td>
+    </tr>
+    <tr>
+      <th>Gravity</th>
+      <td>{{planet.gravity}}</td>
+    </tr>
+    <tr>
+      <th>Terrain</th>
+      <td>{{planet.terrain}}</td>
+    </tr>
+    <tr>
+      <th>Surface Water</th>
+      <td>{{planet.surface_water}}</td>
+    </tr>
+    <tr>
+      <th>Population</th>
+      <td>{{planet.population}}</td>
+    </tr>
+    <tr>
+      <th>Resident</th>
+      <td>{{planet.residents.length}}</td>
+    </tr>
+    <tr>
+      <th>Films</th>
+      <td>{{planet.films.length}}</td>
+    </tr>
+    <tr>
+      <th>Created</th>
+      <td>{{planet.created | date}}</td>
+    </tr>
+    <tr>
+      <th>Edited</th>
+      <td>{{planet.edited | date}}</td>
+    </tr>
+  </table>
+
+</div>
+
+<ng-template #noPlanetSelected></ng-template>

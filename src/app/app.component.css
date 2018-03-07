@@ -1,0 +1,67 @@
+header{
+    background-color: grey;
+    position: fixed;
+    height: 10%;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+footer {
+    background-color: grey;
+    position: fixed;
+    height: 5%;
+    bottom: 0;
+    width: 100%;
+    z-index: 5;
+    text-align: center;
+}
+
+.logoImage{
+    height: 100%;
+}
+
+.wrapper{
+    position: absolute;
+    top: 12%;
+    width: 100%
+}
+
+.welcomeDiv{
+    margin: 10px;
+    height: 100%;
+}
+/* .headContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-height: 10%;
+} */
+.appUtils{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.userDetails{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+}
+.logoutImage{
+    height: 50%;
+    width: 10%;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.searchBox{
+    height: 40px;
+    border-radius: 10px;
+    width: 50%;
+    margin-top: 10px;
+    margin-right: 10px;
+}

@@ -1,0 +1,14 @@
+.planetContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+.allPlanetsContainer{
+    flex: 1;
+}
+
+.selectedPlanetContainer{
+    flex:1;
+}

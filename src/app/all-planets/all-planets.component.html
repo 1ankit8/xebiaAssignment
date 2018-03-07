@@ -1,0 +1,14 @@
+<div *ngIf="onlyPlanets && maxPopulation; else fetchingPlanets" class="planetContainer">
+  <div class="allplanets">
+    <div (click)="showPlanet(planet, $event)" *ngFor="let planet of onlyPlanets | paginate: { itemsPerPage: 15, currentPage: p }" class="planet" id="planet" [style.width.px]="getPopulationPercentile(planet.population)"
+      [style.height.px]="getPopulationPercentile(planet.population)" [style.border-radius.px]="getPopulationPercentile(planet.population) / 2"
+      [style.padding-top.px]="getPopulationPercentile(planet.population) / 5" [style.font-size.px]="getPopulationPercentile(planet.population) / 5">
+      {{planet.name}}
+    </div>
+  </div>
+  <pagination-controls (pageChange)="p = $event"></pagination-controls>
+</div>
+
+<ng-template #fetchingPlanets><img src="../../assets/images/loading.gif"></ng-template>
+
+<ngx-flash-messages></ngx-flash-messages>

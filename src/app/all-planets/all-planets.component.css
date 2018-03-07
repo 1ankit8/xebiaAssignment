@@ -1,0 +1,43 @@
+.planetContainer{
+/*     background: radial-gradient(white, black); */
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+}
+
+pagination-controls{
+    position: fixed;
+    bottom: 10%;
+}
+
+img{
+    border-radius: 180px;
+    margin: 0px;
+    z-index: 2;
+    position: absolute;
+    top: 100px;
+    left: 400px;
+}
+ngx-flash-messages{
+    font-size: 25px;
+    font-weight: bold;
+    color: red;
+}
+.planet{
+    display: flex;
+    justify-content: center;
+    top: 50%;
+    background:radial-gradient(whitesmoke, blue);
+    margin: 5px;
+    word-wrap: initial;
+    text-align: center;
+    cursor: pointer;
+}
+
+.allplanets{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
