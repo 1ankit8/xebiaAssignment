@@ -114,7 +114,7 @@ export class AllPlanetsComponent implements OnInit {
         this.searchCounter.push(new Date());
         return false;
       } else {
-        this.flashMessagesService.show('ALERT! You have exhausted your search limits. Please try after ' + difference + ' seconds.', {
+        this.flashMessagesService.show('ALERT! You have exhausted your search limits. Please try after ' + (60 - difference) + ' seconds.', {
           classes: ['alert'],
           timeout: 3000
         });
